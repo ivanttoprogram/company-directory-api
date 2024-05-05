@@ -31,7 +31,7 @@ const props = defineProps({
 
 <template>
   <!--{{ fullname }} <br /> -->
-  <RouterLink :to="{name: 'CardDetails', params: {id: username}}">
+  <RouterLink :to="{name: 'CardDetails', params: {id: props.employee._id}}">
   <div class="border border-blue-900 rounded-lg shadow bg-blue-400 h-full">
     <img :src="faker.image.urlLoremFlickr({category: 'people'})" class="rounded-t-xl"/>
     <div class="p-4">
